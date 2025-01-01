@@ -52,7 +52,7 @@ namespace ArchUnitNET.Fluent
                         this,
                         new StringIdentifier(Description),
                         false,
-                        $"The rule requires positive evaluation, not just absence of violations. Use {nameof(WithoutRequiringPositiveResults)}() or improve your rule's predicates.",
+                        $"The rule requires positive evaluation, not a mere absence of violations. Use {nameof(WithoutRequiringPositiveResults)}() or write your rule's predicates such that they evaluate to true on actually existing code.",
                         this,
                         architecture
                     )
